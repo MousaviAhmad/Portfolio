@@ -12,14 +12,14 @@
 /* Global Styles */
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #DDDDDD;
-
-
+  overflow-x: hidden;
 }
 
 
@@ -70,7 +70,7 @@ nav ul {
 
 nav ul li {
   height: 20%;
-  overflow: hidden;
+
 }
 
 nav li a {
@@ -216,18 +216,43 @@ section {
   }
 }
 
-/* Media query for small screens  */
-@media (max-width: 600px) {
+/* screens smaller than 768px */
+@media screen and (max-width: 768px) {
 
-  /* Adjust the position of the home icon and menu bars */
-  section#home a {
-    top: 1rem;
-    left: 1rem;
+
+  nav ul li {
+    height: 10%;
+    padding: 0.5rem 0;
   }
+
+
+  nav li a {
+    top: 50%;
+    font-size: 1.5rem;
+  }
+
 
   .menu-bars {
     top: 0.5rem;
     right: 1rem;
+  }
+
+  .home-icon {
+    right: 1rem;
+  }
+}
+
+/* screens smaller than 480px */
+@media screen and (max-width: 480px) {
+
+
+  nav ul li {
+    height: 8%;
+    padding: 0.25rem 0;
+  }
+
+  nav li a {
+    font-size: 1rem;
   }
 }
 
@@ -528,50 +553,58 @@ button:hover {
   }
 }
 
-/* Media Query Small Screen */
+/* Media Query Small and Medium Screen */
 
-@media (max-width: 600px) {
-  .imgbox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0;
   }
 
-  .imgbox img {
-    max-width: 100%;
-    height: auto;
-    padding-top: 5rem;
-  }
-
-  .imgbox #color {
-    display: none;
-  }
-
-  p {
-    font-size: 3vw;
-    display: block;
-    font-family: Montserrat, sans-serif;
-    width: 80vw;
-    color: #3d535f;
-    font-weight: bold;
-  }
-
-  .btns {
+  .cols {
     width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50%;
+  }
+
+  .topline {
+    font-size: 2.5vw;
   }
 
   .square {
+    font-size: 2vw;
+  }
 
-    font-size: 5vw;
-    padding-bottom: 10px;
+  p {
+    font-size: 0.8vw;
+  }
+
+  .imgbox img {
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  .wrapper::before {
+    height: 15vw;
+    width: 15vw;
+    left: -10%;
+    top: 30%;
+  }
+
+  .wrapper::after {
+    height: 6vw;
+    width: 6vw;
+    left: 30%;
+    top: 8%;
+  }
+
+  @keyframes animateUser {
+    50% {
+      right: 30px;
+      top: -50px;
+    }
+  }
+
+  .imgbox img {
+    animation: animateUser 3s linear infinite;
   }
 }
 
@@ -619,6 +652,7 @@ button:hover {
   width: 100%;
   max-width: 300px;
   height: auto;
+
   /* combination of two radial gradients */
   --m:
     radial-gradient(circle farthest-side at right, #000 99%, #0000) 0 100%/46% 92% no-repeat,
@@ -700,17 +734,19 @@ skills .skill img:hover {
   color: #3d535f;
 }
 
+
 /* For screens smaller than 600px */
 @media (max-width: 600px) {
-  #skills .skill-images {
+  #skills .skill img {
+    max-width: 100%;
     flex-direction: column;
-    align-items: center;
+    align-items: center
   }
 
   #skills .skill {
     margin-right: 0;
     margin-bottom: 2rem;
-
+    max-width: 200px;
   }
 
   #skills h2 {
@@ -721,10 +757,20 @@ skills .skill img:hover {
     transform: translateX(-50%);
     z-index: 1;
   }
+}
 
+@media (min-width: 900px) {
+  #skills .skill {
+    margin-right: 6rem;
+    margin-bottom: 3rem;
+  }
+
+  #skills h2 {
+    font-size: 3vw;
+  }
 
   #skills .skill img {
-    max-width: 200px;
+    max-width: 300px;
   }
 }
 
@@ -836,17 +882,68 @@ textarea {
   }
 }
 
-/* Styles for screens larger than 768px */
-@media (min-width: 768px) {
+/* screens up to 767px wide */
+@media (max-width: 767px) {
   section#contact {
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
   .feedback-input {
-    font-size: 18px;
-    padding: 13px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  [type="submit"] {
+    font-size: 20px;
+  }
+
+  .icon {
+    padding-bottom: 15px;
+  }
+
+  .form-icon {
+    font-size: 1.5em;
+  }
+
+  section#contact {
+    padding: 0 20px;
+  }
+}
+
+/* screens between 768px and 1023px wide */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .feedback-input {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  [type="submit"] {
+    font-size: 22px;
+  }
+
+  .form-icon {
+    font-size: 1.8em;
+  }
+
+  section#contact {
+    padding: 0 40px;
+  }
+}
+
+/* screens over 1023px wide */
+@media (min-width: 1024px) {
+  .feedback-input {
+    font-size: 22px;
+    padding: 18px;
   }
 
   textarea {
@@ -857,11 +954,11 @@ textarea {
     font-size: 24px;
   }
 
-  .icon {
-    padding-bottom: 25px;
-  }
-
   .form-icon {
     font-size: 2em;
+  }
+
+  section#contact {
+    padding: 0 80px;
   }
 }
