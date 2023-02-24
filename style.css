@@ -178,13 +178,13 @@ section {
   transform: translateY(-50%);
 }
 
-/* Styling for the home icon in the navigation menu */
+/* Styling for the home icon */
 .home-icon a {
   padding: 20px 10px;
   font-size: 2rem;
 }
 
-/* Slide-in animation for each navigation menu item */
+/* Slide-in animation for navigation  */
 .slide-in-1 {
   animation: slide-in 0.4s linear 0.2s both;
 }
@@ -262,6 +262,8 @@ section#about {
   background-color: #DDDDDD;
 }
 
+
+
 .wrapper {
   display: flex;
   width: 100%;
@@ -320,6 +322,13 @@ section#about {
   position: relative;
   z-index: 3;
 }
+
+.line1 {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+
 
 .square {
   display: block;
@@ -556,12 +565,26 @@ button:hover {
 /* Media Query Small and Medium Screen */
 
 @media screen and (max-width: 768px) {
+
+
   .wrapper {
+
     padding: 0;
+  }
+
+  .line {
+    margin-left: 5.5rem;
+  }
+
+  .line1 {
+    margin-left: 7rem;
+    margin-top: 5px;
   }
 
   .cols {
     width: 100%;
+    text-align: center;
+
   }
 
   .topline {
@@ -569,17 +592,32 @@ button:hover {
   }
 
   .square {
-    font-size: 2vw;
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .square-text {
+
+    margin-left: 3rem;
   }
 
   p {
-    font-size: 0.8vw;
+    font-size: 14px;
+    width: 100%;
+    margin-left: 3rem;
+
   }
 
+  .btns {
+    margin-left: 3rem;
+  }
+
+
   .imgbox img {
-    width: 100%;
+    width: 150%;
     top: 0;
     right: 0;
+
   }
 
   .wrapper::before {
@@ -598,15 +636,100 @@ button:hover {
 
   @keyframes animateUser {
     50% {
-      right: 30px;
-      top: -50px;
+      right: 10px;
+      top: -20px;
     }
   }
 
+
+
   .imgbox img {
-    animation: animateUser 3s linear infinite;
+    animation: animateUser 5s linear infinite;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #about .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+  }
+
+  #about .imgbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+  }
+
+  #about .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45vw;
+    height: 45vw;
+    margin: auto;
+    animation-play-state: paused;
+  }
+
+  #about .imgbox #color {
+    display: none;
+  }
+
+
+
+  .square {
+    font-size: 6vw;
+    text-align: center;
+    letter-spacing: normal;
+
+  }
+
+  .line {
+    margin-left: 25%;
+    margin-top: 20%
+  }
+
+  .line1 {
+    margin-left: 25%;
+  }
+
+  p {
+    margin-top: 20px;
+    text-align: center;
+    margin: auto;
+    font-size: 3vw;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: -0.05em;
+
+  }
+
+  #about .cols {
+    width: 100%;
+    text-align: center;
+  }
+
+  #about .square-text {
+    text-align: center;
+    margin: auto;
+
+
+  }
+
+  #about .about-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btns {
+    margin: auto;
+  }
+}
+
 
 
 
@@ -734,32 +857,33 @@ skills .skill img:hover {
   color: #3d535f;
 }
 
+@media screen and (min-width: 600px) and (max-width: 768px) {
 
-/* For screens smaller than 600px */
-@media (max-width: 600px) {
-  #skills .skill img {
-    max-width: 100%;
-    flex-direction: column;
-    align-items: center
-  }
-
-  #skills .skill {
-    margin-right: 0;
-    margin-bottom: 2rem;
-    max-width: 200px;
+  #skills {
+    padding-top: 100px;
+    /* adjust this value based on the height of your h2 element */
   }
 
   #skills h2 {
     font-size: 6vw;
-    position: absolute;
-    top: -15%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+    position: static;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  #skills .skill {
+    margin-right: 0;
+  }
+
+  #skills .skill img {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media (min-width: 900px) {
+
+@media (min-width: 768px) {
   #skills .skill {
     margin-right: 6rem;
     margin-bottom: 3rem;
@@ -850,7 +974,7 @@ textarea {
   color: #46C2CB;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   section#contact {
     background-size: contain;
     background-repeat: no-repeat;
@@ -882,38 +1006,6 @@ textarea {
   }
 }
 
-/* screens up to 767px wide */
-@media (max-width: 767px) {
-  section#contact {
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .feedback-input {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  textarea {
-    height: 100px;
-  }
-
-  [type="submit"] {
-    font-size: 20px;
-  }
-
-  .icon {
-    padding-bottom: 15px;
-  }
-
-  .form-icon {
-    font-size: 1.5em;
-  }
-
-  section#contact {
-    padding: 0 20px;
-  }
-}
 
 /* screens between 768px and 1023px wide */
 @media (min-width: 768px) and (max-width: 1023px) {
