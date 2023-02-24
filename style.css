@@ -354,6 +354,10 @@ p {
   width: 90%;
   font-size: 1vw;
   color: #3d535f;
+  text-align: justify;
+  text-justify: inter-word;
+  letter-spacing: -0.05em;
+
 }
 
 .btns {
@@ -385,10 +389,6 @@ button {
   display: inline-block;
   padding: 9px 30px;
   letter-spacing: 1px;
-
-
-
-
 }
 
 button:hover {
@@ -567,9 +567,10 @@ button:hover {
 @media screen and (max-width: 768px) {
 
 
-  .wrapper {
 
+  .wrapper {
     padding: 0;
+    padding-bottom: 50px;
   }
 
   .line {
@@ -745,18 +746,19 @@ button:hover {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
+  padding: 10%;
 }
 
 #skills h2 {
   font-family: Libre Baskerville, sans-serif;
   color: #3d535f;
-  font-size: 3vw;
+  font-size: 5vw;
   font-weight: 900;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 5px;
+  padding: 10px;
 }
 
 #skills .skill {
@@ -765,8 +767,9 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-right: 6rem;
-  margin-bottom: 3rem;
+  margin: auto;
   max-width: 300px;
+  width: 200px;
 }
 
 
@@ -857,46 +860,93 @@ skills .skill img:hover {
   color: #3d535f;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-
-  #skills {
-    padding-top: 100px;
-    /* adjust this value based on the height of your h2 element */
+@media screen and (min-width: 600px) and (max-width: 765px) {
+  #skills .skill-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
   }
 
   #skills h2 {
-    font-size: 6vw;
-    position: static;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    font-family: Libre Baskerville, sans-serif;
+    color: #3d535f;
+    font-size: 5vw;
+    font-weight: 900;
+    position: absolute;
   }
 
   #skills .skill {
-    margin-right: 0;
-  }
-
-  #skills .skill img {
-    max-width: 100%;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-}
-
-
-@media (min-width: 768px) {
-  #skills .skill {
     margin-right: 6rem;
     margin-bottom: 3rem;
-  }
-
-  #skills h2 {
-    font-size: 3vw;
+    max-width: 300px;
   }
 
   #skills .skill img {
+    width: 150px;
     max-width: 300px;
+    height: auto;
+    align-items: center;
+    margin-left: auto;
+  }
+
+
+  #skills .skill p {
+    margin-top: 25px 0;
+    text-align: center;
+    font-family: Merriweather, sans-serif;
+    color: #3d535f;
+    font-size: 17px;
+
   }
 }
+
+@media screen and (max-width: 600px) {
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #skills h2 {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  #skills .skill-images {
+    margin-top: 20px;
+    width: 40%;
+    margin-bottom: 25%;
+  }
+
+  #skills .skill {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #skills .skill img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  #skills p {
+    font-size: 16px;
+  }
+
+}
+
+
 
 
 /* Contact Me*/
