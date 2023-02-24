@@ -2,10 +2,10 @@
 
 :root {
   --primaryColor: #fff;
-  --navColor1: #A75D5D;
-  --navColor2: #D3756B;
-  --navColor3: #F0997D;
-  --navColor4: #F55050;
+  --navColor1: #6096B4;
+  --navColor2: #93BFCF;
+  --navColor3: #BDCDD6;
+  --navColor4: #EEE9DA;
   --navColor5: #FFC3A1;
 }
 
@@ -70,7 +70,7 @@ nav ul {
 
 nav ul li {
   height: 20%;
-
+  overflow: hidden;
 }
 
 nav li a {
@@ -90,7 +90,7 @@ nav li a:hover {
 
 nav li a::before {
   content: "";
-  width: 50%;
+  width: 25vw;
   height: 3px;
   background-color: #fff;
   position: absolute;
@@ -162,7 +162,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
+
   letter-spacing: 2px;
 }
 
@@ -220,10 +220,7 @@ section {
 @media screen and (max-width: 768px) {
 
 
-  nav ul li {
-    height: 10%;
-    padding: 0.5rem 0;
-  }
+
 
 
   nav li a {
@@ -246,10 +243,6 @@ section {
 @media screen and (max-width: 480px) {
 
 
-  nav ul li {
-    height: 8%;
-    padding: 0.25rem 0;
-  }
 
   nav li a {
     font-size: 1rem;
@@ -562,6 +555,9 @@ button:hover {
   }
 }
 
+
+
+
 /* Media Query Small and Medium Screen */
 
 @media screen and (max-width: 768px) {
@@ -670,9 +666,9 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 45vw;
-    height: 45vw;
-    margin: auto;
+    width: 65vw;
+    height: 65vw;
+    margin: 14vh auto auto auto;
     animation-play-state: paused;
   }
 
@@ -705,7 +701,7 @@ button:hover {
     font-size: 3vw;
     text-align: justify;
     text-justify: inter-word;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.07em;
 
   }
 
@@ -752,7 +748,7 @@ button:hover {
 #skills h2 {
   font-family: Libre Baskerville, sans-serif;
   color: #3d535f;
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 900;
   position: absolute;
   top: 0;
@@ -767,9 +763,10 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-right: 6rem;
-  margin: auto;
+  margin-right: 2.5rem;
   max-width: 300px;
   width: 200px;
+
 }
 
 
@@ -858,7 +855,10 @@ skills .skill img:hover {
   text-align: center;
   font-family: Merriweather, sans-serif;
   color: #3d535f;
+  font-size: 1rem;
 }
+
+
 
 @media screen and (min-width: 600px) and (max-width: 765px) {
   #skills .skill-images {
@@ -1056,51 +1056,57 @@ textarea {
   }
 }
 
+@media (max-width: 767px) {
+  section#contact {
+    background-size: cover;
+  }
 
-/* screens between 768px and 1023px wide */
-@media (min-width: 768px) and (max-width: 1023px) {
   .feedback-input {
-    font-size: 20px;
-    padding: 15px;
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 10px;
   }
 
   textarea {
-    height: 120px;
+    height: 80px;
   }
 
   [type="submit"] {
-    font-size: 22px;
+    font-size: 18px;
+  }
+
+  .icon {
+    padding-bottom: 10px;
   }
 
   .form-icon {
-    font-size: 1.8em;
+    font-size: 1.2em;
   }
 
   section#contact {
-    padding: 0 40px;
+    padding: 0 10px;
   }
 }
 
-/* screens over 1023px wide */
-@media (min-width: 1024px) {
+@media screen and (max-width: 600px) {
+  section#contact {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   .feedback-input {
-    font-size: 22px;
-    padding: 18px;
+    font-size: 14px;
+    padding: 8px;
   }
 
   textarea {
-    height: 150px;
+    height: 80px;
   }
 
-  [type="submit"] {
-    font-size: 24px;
-  }
 
-  .form-icon {
-    font-size: 2em;
-  }
 
-  section#contact {
-    padding: 0 80px;
+  #contact form {
+    padding: 10%;
+
   }
 }
