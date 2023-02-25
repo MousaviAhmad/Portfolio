@@ -26,7 +26,7 @@ body {
 /* Navigation Menu */
 
 section#home {
-  background-image: url("../images/Idea.jpg");
+  background-image: url("https://github.com/MousaviAhmad/Portfolio/blob/main/images/Idea.jpg?raw=true");
   background-size: cover;
   background-position: center center;
 }
@@ -1108,8 +1108,11 @@ textarea {
 
   }
 }
+<<<<<<< HEAD
 
 footer p {
   font-size: 11px;
   text-align: center;
 }
+=======
+>>>>>>> 41a42643945fa8ce57deb9252296c78f578fb51e
