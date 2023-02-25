@@ -350,7 +350,6 @@ p {
   text-align: justify;
   text-justify: inter-word;
   letter-spacing: -0.05em;
-
 }
 
 .btns {
@@ -524,9 +523,7 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%) rotate(-35deg);
   width: 500px;
-
   max-width: 160%;
-
   filter: saturate(200%);
   animation: animate 4s linear infinite;
   padding-left: 30%;
@@ -666,8 +663,8 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 65vw;
-    height: 65vw;
+    width: 40vw;
+    height: 40vw;
     margin: 14vh auto auto auto;
     animation-play-state: paused;
   }
@@ -679,6 +676,7 @@ button:hover {
 
 
   .square {
+
     font-size: 6vw;
     text-align: center;
     letter-spacing: normal;
@@ -687,7 +685,7 @@ button:hover {
 
   .line {
     margin-left: 25%;
-    margin-top: 20%
+    margin-top: 30%
   }
 
   .line1 {
@@ -698,7 +696,7 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     margin: auto;
-    font-size: 3vw;
+    font-size: 3.5vw bold;
     text-align: justify;
     text-justify: inter-word;
     letter-spacing: -0.07em;
@@ -1109,4 +1107,9 @@ textarea {
     padding: 10%;
 
   }
+}
+
+footer p {
+  font-size: 11px;
+  text-align: center;
 }
