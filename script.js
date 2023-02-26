@@ -41,6 +41,7 @@ function toggleNav() {
 // Attach click event to menu bar button
 menuBars.on('click', toggleNav);
 
+
 // Attach click event to each navigation item
 navs.forEach(nav => nav.on('click', toggleNav));
 
@@ -54,5 +55,8 @@ for (var i = 0; i < square.length; i++) {
     }, false);
   })
 }
+
+
+
 
 
