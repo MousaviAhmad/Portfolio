@@ -159,8 +159,8 @@
 
 
   <section id="contact">
-    <form #contact-me>
-      <dive class="icon">
+    <form id="contact-form" action="send-email.php" method="POST">
+      <div class="icon">
         <a href="https://github.com/">
           <i class="fab fa-github form-icon"></i>
         </a>
@@ -176,13 +176,14 @@
         <a href="https://instagram.com/">
           <i class="fab fa-instagram form-icon"></i>
         </a>
-      </dive>
-      <input name="name" type="text" class="feedback-input" placeholder="Name" />
-      <input name="email" type="text" class="feedback-input" placeholder="Email" />
-      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-      <input type="submit" value="SUBMIT" />
+      </div>
+      <input name="name" type="text" class="feedback-input" placeholder="Name" required>
+      <input name="email" type="email" class="feedback-input" placeholder="Email" required>
+      <textarea name="message" class="feedback-input" placeholder="Message" required></textarea>
+      <button type="submit" class="submit-button">submit</button>
     </form>
   </section>
+
 
   <footer>
     <p>&copy; 2023 Ahmad Mousavi. All rights reserved.</p>

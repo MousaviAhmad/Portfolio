@@ -181,7 +181,7 @@ section {
 /* Styling for the home icon */
 .home-icon a {
   padding: 20px 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* Slide-in animation for navigation  */
@@ -352,45 +352,51 @@ p {
   letter-spacing: -0.05em;
 }
 
-.btns {
-  width: 100%;
-  position: relative;
-  left: 1vw;
-}
 
 .cols0 {
   z-index: 5;
 }
 
+
 button {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   outline: none;
-  border-radius: 30px;
+  border: none;
+  border-radius: 50px;
   cursor: pointer;
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   color: #fff;
-  background-color: #3d535f;
-  background: #3d535f;
-  padding: 8px 14px;
+  background: linear-gradient(to right, #f02fc2, #6094ea);
+  padding: 15px 40px;
   margin: 40px 15px;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  transition: ease .50s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  padding: 9px 30px;
-  letter-spacing: 1px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
 }
 
 button:hover {
-  background: #7f00ff;
-  transform: scale(1.1);
-  background: #7f00ff;
-  border: 2px solid #7f00ff;
-  color: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+button:hover::before {
+  filter: blur(20px);
+}
+
+button:focus {
+  outline: none;
+}
 
 
 .square:hover {
@@ -955,77 +961,162 @@ section#contact {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23a8d1d1' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23f1f7b5' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%239eceb8' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23f0c881' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23acc595' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23ee9564' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23c9b778' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23e25f62' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23e8a272' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23c32671' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23fd8a8a' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+
 }
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+}
+
 
 .feedback-input {
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  color: #333;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 18px;
   border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border: 2px solid #CC6666;
+  line-height: 24px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
   transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
-  outline: 0;
+  outline: none;
 }
 
-
 .feedback-input:focus {
-  border: 2px solid #CC4949;
+  border: 1px solid #666;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 textarea {
-  height: 150px;
-  line-height: 150%;
   resize: vertical;
+  min-height: 120px;
 }
 
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background: #CC6666;
+  background: linear-gradient(to right, #f02fc2, #6094ea);
   border-radius: 5px;
   border: 0;
   cursor: pointer;
   color: white;
   font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
   transition: all 0.3s;
   margin-top: -4px;
   font-weight: 700;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 [type="submit"]:hover {
-  background: #CC4949;
+  background: linear-gradient(to right, #f02fc2, #6094ea);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
 }
+
+[type="submit"]:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: pulse 1s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+.submit-button {
+  margin: auto;
+}
+
+
+
 
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 25px
+  padding-bottom: 25px;
 }
 
 .form-icon {
   margin: 0 10px;
   font-size: 2em;
   color: #FC7300;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 8px;
 }
 
 .form-icon:hover {
   color: #46C2CB;
+  transform: scale(1.2);
+  background-color: #F8F8F8;
 }
+
+.form-icon:hover i {
+  transform: rotate(360deg);
+}
+
+.form-icon i {
+  transition: all 0.3s ease-in-out;
+}
+
+
+@media (min-width: 768px) {
+  section#contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  #contact-form {
+    padding: 0 15% 0 8%;
+  }
+
+
+
+}
+
 
 @media (max-width: 768px) {
   section#contact {
     background-size: contain;
     background-repeat: no-repeat;
+
+  }
+
+  #contact form {
+    padding-left: 8%;
+    margin-right: 10px;
+
   }
 
   .feedback-input {
@@ -1051,38 +1142,7 @@ textarea {
 
   section#contact {
     padding: 0 20px;
-  }
-}
 
-@media (max-width: 767px) {
-  section#contact {
-    background-size: cover;
-  }
-
-  .feedback-input {
-    font-size: 14px;
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-
-  textarea {
-    height: 80px;
-  }
-
-  [type="submit"] {
-    font-size: 18px;
-  }
-
-  .icon {
-    padding-bottom: 10px;
-  }
-
-  .form-icon {
-    font-size: 1.2em;
-  }
-
-  section#contact {
-    padding: 0 10px;
   }
 }
 
@@ -1090,6 +1150,11 @@ textarea {
   section#contact {
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  #contact-form {
+    padding: 10%;
+    text-align: center;
   }
 
   .feedback-input {
@@ -1104,14 +1169,13 @@ textarea {
 
 
   #contact form {
-    padding: 10%;
+    padding-left: 8%;
+    margin-right: 10px;
 
   }
 }
 
-<<<<<<< HEAD footer p {
+footer p {
   font-size: 11px;
   text-align: center;
 }
-
-=======>>>>>>>41a42643945fa8ce57deb9252296c78f578fb51e
