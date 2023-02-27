@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Nunito&family=Roboto&display=swap');
 
 :root {
   --primaryColor: #fff;
@@ -74,6 +74,8 @@ nav ul li {
 }
 
 nav li a {
+  font-family: Nunito, sans-serif;
+  font-size: 2rem;
   position: relative;
   top: 45%;
   color: #fff;
@@ -325,7 +327,7 @@ section#about {
 
 .square {
   display: block;
-  font-family: Libre Baskerville, sans-serif;
+  font-family: Bunge, sans-serif;
   font-size: 3vw;
   font-weight: 900;
   -webkit-animation-duration: 1s;
@@ -343,7 +345,7 @@ section#about {
 
 p {
   display: block;
-  font-family: Montserrat, sans-serif;
+  font-family: Roboto, sans-serif;
   width: 90%;
   font-size: 1vw;
   color: #3d535f;
@@ -359,12 +361,13 @@ p {
 
 
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: Nunito, sans-serif;
+  letter-spacing: 1px;
   outline: none;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #fff;
   background: linear-gradient(to right, #f02fc2, #6094ea);
@@ -729,6 +732,10 @@ button:focus {
   .btns {
     margin: auto;
   }
+
+  button {
+    font-size: 1rem;
+  }
 }
 
 
@@ -746,13 +753,13 @@ button:focus {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  padding: 10%;
+
 }
 
 #skills h2 {
-  font-family: Libre Baskerville, sans-serif;
+  font-family: Bunge, sans-serif;
   color: #3d535f;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 900;
   position: absolute;
   top: 0;
@@ -766,12 +773,11 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 6rem;
-  margin-right: 2.5rem;
+  margin-right: 10%;
+  width: 100%;
   max-width: 300px;
-  width: 200px;
-
 }
+
 
 
 
@@ -781,8 +787,7 @@ button:focus {
   height: auto;
 
   /* combination of two radial gradients */
-  --m:
-    radial-gradient(circle farthest-side at right, #000 99%, #0000) 0 100%/46% 92% no-repeat,
+  --m: radial-gradient(circle farthest-side at right, #000 99%, #0000) 0 100%/46% 92% no-repeat,
     radial-gradient(circle farthest-side at left, #000 99%, #0000) 100% 0/46% 92% no-repeat;
   -webkit-mask: var(--m);
   mask: var(--m);
@@ -855,12 +860,15 @@ skills .skill img:hover {
 }
 
 #skills .skill p {
-  margin-top: 20px;
+  padding-top: 10px;
   text-align: center;
-  font-family: Merriweather, sans-serif;
+  font-family: Roboto, sans-serif;
   color: #3d535f;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
+
 
 
 
@@ -910,7 +918,7 @@ skills .skill img:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 600px) {
   #skills {
     display: flex;
     flex-direction: column;
@@ -929,8 +937,9 @@ skills .skill img:hover {
 
   #skills .skill-images {
     margin-top: 20px;
-    width: 40%;
+    width: 8rem;
     margin-bottom: 25%;
+
   }
 
   #skills .skill {
@@ -938,15 +947,11 @@ skills .skill img:hover {
     width: 100%;
   }
 
-  #skills .skill img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+  #skills .skill p {
+    font-size: 1rem;
   }
 
-  #skills p {
-    font-size: 16px;
-  }
+
 
 }
 
@@ -969,12 +974,11 @@ section#contact {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-
+  padding: 20px;
 }
 
 
-.feedback-input {
+#contact-form .feedback-input {
   color: #333;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 18px;
@@ -988,6 +992,8 @@ section#contact {
   width: 100%;
   box-sizing: border-box;
   outline: none;
+  outline: none;
+  resize: none;
 }
 
 .feedback-input:focus {
@@ -1053,6 +1059,8 @@ textarea {
 
 .submit-button {
   margin: auto;
+  font-size: 2rem;
+  font-family: Nunito, sans-serif;
 }
 
 
@@ -1067,7 +1075,7 @@ textarea {
 
 .form-icon {
   margin: 0 10px;
-  font-size: 2em;
+  font-size: 3em;
   color: #FC7300;
   transition: all 0.3s ease-in-out;
   background-color: transparent;
