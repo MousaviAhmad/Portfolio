@@ -26,7 +26,7 @@ body {
 /* Navigation Menu */
 
 section#home {
-  background-image: url("https://github.com/MousaviAhmad/Portfolio/blob/main/images/Idea.jpg?raw=true");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1441' height='560' preserveAspectRatio='none' viewBox='0 0 1441 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1188%26quot%3b)' fill='none'%3e%3crect width='1441' height='560' x='0' y='0' fill='rgba(221%2c 221%2c 221%2c 1)'%3e%3c/rect%3e%3cg mask='url(%26quot%3b%23SvgjsMask1189%26quot%3b)'%3e%3cpath d='M148.5 280.5L181.5 313.5L214.5 313.5L247.5 313.5M313.5 280.5L346.5 313.5L379.5 313.5L412.5 313.5M379.5 280.5L412.5 247.5M346.5 280.5L379.5 247.5M-16.5 280.5L16.5 280.5L49.5 280.5L82.5 280.5L115.5 280.5L148.5 280.5L181.5 280.5L214.5 280.5L247.5 280.5L280.5 280.5L313.5 280.5L346.5 280.5L379.5 280.5L412.5 280.5L445.5 280.5L478.5 280.5' stroke='rgba(125%2c 185%2c 182%2c 1)' stroke-width='5.5'%3e%3c/path%3e%3cpath d='M470.25 280.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM239.25 313.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM404.25 313.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM404.25 247.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM371.25 247.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0z' fill='rgba(125%2c 185%2c 182%2c 1)'%3e%3c/path%3e%3cpath d='M445.5 214.5L478.5 247.5L511.5 247.5L544.5 247.5L577.5 247.5L610.5 247.5M247.5 247.5L280.5 214.5L313.5 214.5M181.5 247.5L214.5 214.5L247.5 214.5M313.5 247.5L346.5 247.5M-16.5 247.5L16.5 247.5L49.5 247.5L82.5 247.5L115.5 247.5L148.5 247.5L181.5 247.5L214.5 247.5L247.5 247.5L280.5 247.5L313.5 247.5L346.5 214.5L379.5 214.5L412.5 214.5L445.5 214.5L478.5 214.5L511.5 214.5' stroke='rgba(233%2c 100%2c 121%2c 1)' stroke-width='5.5'%3e%3c/path%3e%3cpath d='M503.25 214.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM602.25 247.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM305.25 214.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM239.25 214.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM338.25 247.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0z' fill='rgba(233%2c 100%2c 121%2c 1)'%3e%3c/path%3e%3cpath d='M-16.5 313.5L16.5 313.5L49.5 313.5' stroke='rgba(233%2c 100%2c 121%2c 1)' stroke-width='5.5'%3e%3c/path%3e%3cpath d='M41.25 313.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0z' fill='rgba(233%2c 100%2c 121%2c 1)'%3e%3c/path%3e%3cpath d='M478.5 181.5L511.5 148.5L544.5 148.5L577.5 148.5L610.5 115.5L643.5 115.5L676.5 115.5M280.5 181.5L313.5 148.5M544.5 181.5L577.5 214.5L610.5 214.5L643.5 214.5M148.5 181.5L181.5 214.5M-16.5 214.5L16.5 214.5L49.5 214.5L82.5 214.5L115.5 214.5L148.5 181.5L181.5 181.5L214.5 181.5L247.5 181.5L280.5 181.5L313.5 181.5L346.5 181.5L379.5 181.5L412.5 181.5L445.5 181.5L478.5 181.5L511.5 181.5L544.5 181.5L577.5 181.5' stroke='rgba(125%2c 185%2c 182%2c 1)' stroke-width='5.5'%3e%3c/path%3e%3cpath d='M569.25 181.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM668.25 115.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM305.25 148.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM635.25 214.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM173.25 214.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0z' fill='rgba(125%2c 185%2c 182%2c 1)'%3e%3c/path%3e%3cpath d='M-16.5 346.5L16.5 346.5' stroke='rgba(125%2c 185%2c 182%2c 1)' stroke-width='5.5'%3e%3c/path%3e%3cpath d='M8.25 346.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0z' fill='rgba(125%2c 185%2c 182%2c 1)'%3e%3c/path%3e%3cpath d='M82.5 181.5L115.5 148.5M181.5 148.5L214.5 115.5L247.5 115.5L280.5 115.5L313.5 115.5M49.5 181.5L82.5 148.5M-16.5 181.5L16.5 181.5L49.5 181.5L82.5 181.5L115.5 181.5L148.5 148.5L181.5 148.5L214.5 148.5' stroke='rgba(125%2c 185%2c 182%2c 1)' stroke-width='5.5'%3e%3c/path%3e%3cpath d='M206.25 148.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM107.25 148.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM305.25 115.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM74.25 148.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0z' fill='rgba(125%2c 185%2c 182%2c 1)'%3e%3c/path%3e%3cpath d='M16.5 379.5L49.5 412.5M115.5 346.5L148.5 313.5M82.5 379.5L115.5 379.5M445.5 346.5L478.5 313.5L511.5 313.5L544.5 313.5M181.5 346.5L214.5 379.5L247.5 379.5L280.5 379.5L313.5 412.5L346.5 412.5L379.5 412.5M-16.5 379.5L16.5 379.5L49.5 379.5L82.5 379.5L115.5 346.5L148.5 346.5L181.5 346.5L214.5 346.5L247.5 346.5L280.5 346.5L313.5 346.5L346.5 346.5L379.5 379.5L412.5 379.5L445.5 346.5L478.5 346.5L511.5 346.5L544.5 346.5L577.5 346.5L610.5 346.5L643.5 313.5' stroke='rgba(125%2c 185%2c 182%2c 1)' stroke-width='5.5'%3e%3c/path%3e%3cpath d='M635.25 313.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM41.25 412.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM140.25 313.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM107.25 379.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM536.25 313.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM371.25 412.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0z' fill='rgba(125%2c 185%2c 182%2c 1)'%3e%3c/path%3e%3cpath d='M16.5 115.5L49.5 82.5L82.5 82.5L115.5 82.5M148.5 115.5L181.5 115.5M-16.5 148.5L16.5 115.5L49.5 115.5L82.5 115.5L115.5 115.5L148.5 115.5L181.5 82.5' stroke='rgba(233%2c 100%2c 121%2c 1)' stroke-width='5.5'%3e%3c/path%3e%3cpath d='M173.25 82.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM107.25 82.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0zM173.25 115.5 a8.25 8.25 0 1 0 16.5 0 a8.25 8.25 0 1 0 -16.5 0z' fill='rgba(233%2c 100%2c 121%2c 1)'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1188'%3e%3crect width='1441' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cmask id='SvgjsMask1189'%3e%3crect width='1441' height='560' fill='white'%3e%3c/rect%3e%3cpath d='M474.37 280.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM243.37 313.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM408.37 313.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM408.37 247.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM375.37 247.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M507.37 214.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM606.37 247.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM309.37 214.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM243.37 214.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM342.37 247.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M45.37 313.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M573.37 181.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM672.37 115.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM309.37 148.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM639.37 214.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM177.37 214.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M12.37 346.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M210.37 148.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM111.37 148.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM309.37 115.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM78.37 148.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M639.37 313.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM45.37 412.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM144.37 313.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM111.37 379.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM540.37 313.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM375.37 412.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0z' fill='black'%3e%3c/path%3e%3cpath d='M177.37 82.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM111.37 82.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0zM177.37 115.5 a4.13 4.13 0 1 0 8.26 0 a4.13 4.13 0 1 0 -8.26 0z' fill='black'%3e%3c/path%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   background-size: cover;
   background-position: center center;
 }
@@ -568,8 +568,6 @@ button:focus {
 
 @media screen and (max-width: 768px) {
 
-
-
   .wrapper {
     padding: 0;
     padding-bottom: 50px;
@@ -752,7 +750,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
+
 
 }
 
@@ -783,8 +781,12 @@ button:focus {
 
 #skills .skill img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
+  filter: grayscale(.5);
+  transition: .3s linear;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 
   /* combination of two radial gradients */
   --m: radial-gradient(circle farthest-side at right, #000 99%, #0000) 0 100%/46% 92% no-repeat,
@@ -804,12 +806,6 @@ button:focus {
   animation: shake 0.8s ease-in-out forwards;
 }
 
-skills .skill img:hover {
-  -webkit-mask-position: 7.5% 50%, 92.5% 50%;
-  mask-position: 7.5% 50%, 92.5% 50%;
-  filter: grayscale(0);
-  animation: shake 0.8s ease-in-out forwards;
-}
 
 /* Shake Animation */
 
@@ -870,11 +866,10 @@ skills .skill img:hover {
 }
 
 
-
-
 @media screen and (min-width: 600px) and (max-width: 765px) {
   #skills .skill-images {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -882,11 +877,14 @@ skills .skill img:hover {
   }
 
   #skills h2 {
-    font-family: Libre Baskerville, sans-serif;
+    font-family: Bunge, sans-serif;
     color: #3d535f;
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: 900;
     position: absolute;
+    top: -12rem;
+    transform: translateX(-50%);
+    margin: auto;
   }
 
   #skills .skill {
@@ -901,15 +899,13 @@ skills .skill img:hover {
 
   #skills .skill img {
     width: 150px;
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
-    align-items: center;
-    margin-left: auto;
   }
 
 
   #skills .skill p {
-    margin-top: 25px 0;
+    margin: 20px auto;
     text-align: center;
     font-family: Merriweather, sans-serif;
     color: #3d535f;
@@ -1114,45 +1110,37 @@ textarea {
 }
 
 
-@media (max-width: 768px) {
-  section#contact {
-    background-size: contain;
-    background-repeat: no-repeat;
-
+@media screen and (min-width: 600px) and (max-width: 765px) {
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
   }
 
-  #contact form {
-    padding-left: 8%;
-    margin-right: 10px;
 
+
+  #contact-form .feedback-input {
+    width: 80%;
   }
 
-  .feedback-input {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  textarea {
-    height: 100px;
-  }
-
-  [type="submit"] {
-    font-size: 20px;
+  .submit-button {
+    width: 80%;
   }
 
   .icon {
-    padding-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .form-icon {
-    font-size: 1.5em;
-  }
-
-  section#contact {
-    padding: 0 20px;
-
+    margin: 10px;
   }
 }
+
 
 @media screen and (max-width: 600px) {
   section#contact {
