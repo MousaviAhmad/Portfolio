@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
 
   <!-- Define viewport for responsive design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <!-- Set title of webpage -->
   <title>Ahmad's Portfolio</title>
@@ -33,7 +34,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
+
+  <!-- Import custom JavaScript file -->
+  <script src="custom.js"></script>
 </head>
+
+<body>
+  <!-- Your HTML code goes here -->
+
+  <!-- Add Bootstrap JavaScript file -->
+  <script src="bootstrap.min.js"></script>
+</body>
+
 
 
 <body>
@@ -61,28 +73,36 @@
   </div>
 
   <!-- Sections -->
-  <section id="home">
-
-    <!-- Social Media Icons -->
-    <div class="home-icon">
-      <a href="https://github.com/">
-        <i class="fab fa-github form-icon"></i>
-      </a>
-
-      <a href="https://www.facebook.com/">
-        <i class="fab fa-facebook form-icon"></i>
-      </a>
-
-      <a href="https://linkedin.com/">
-        <i class="fab fa-linkedin form-icon"></i>
-      </a>
-
-      <a href="https://instagram.com/">
-        <i class="fab fa-instagram form-icon"></i>
-      </a>
+  <section id="home" class="bg-dark">
+    <div class="small-screen-img">
+      <img src="images/Arsam1.png" alt="">
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-6">
+          <!-- Social Media Icons -->
+          <div class="home-icon text-center text-md-right">
+            <a href="https://github.com/">
+              <i class="fab fa-github form-icon"></i>
+            </a>
 
+            <a href="https://www.facebook.com/">
+              <i class="fab fa-facebook form-icon"></i>
+            </a>
+
+            <a href="https://linkedin.com/">
+              <i class="fab fa-linkedin form-icon"></i>
+            </a>
+
+            <a href="https://instagram.com/">
+              <i class="fab fa-instagram form-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
 
 
 
@@ -134,28 +154,34 @@
 
   </section>
 
-  <!-- Skills -->
   <section id="skills">
-    <h2>What I Do!</h2>
-    <div class="skill-images">
-      <div class="skill">
-        <img src="images/HTML.png" alt="HTML" />
-        <p>HTML</p>
-      </div>
-      <div class="skill">
-        <img src="images/css.png" alt="CSS" />
-        <p>CSS</p>
-      </div>
-      <div class="skill">
-        <img src="images/js.png" alt="JavaScript" />
-        <p>JavaScript</p>
-      </div>
-      <div class="skill">
-        <img src="images/photoshop.png" alt="Photoshop" />
-        <p>Photoshop</p>
+    <div class="container">
+      <h2>What I Do!</h2>
+      <div class="row skill-images">
+        <div class="col-sm-6 col-md-3 skill">
+          <img src="images/HTML.png" alt="HTML" class="img-fluid" />
+          <p>HTML</p>
+        </div>
+        <div class="col-sm-6 col-md-3 skill">
+          <img src="images/css.png" alt="CSS" class="img-fluid" />
+          <p>CSS</p>
+        </div>
+        <div class="col-sm-6 col-md-3 skill">
+          <img src="images/js.png" alt="JavaScript" class="img-fluid" />
+          <p>JavaScript</p>
+        </div>
+        <div class="col-sm-6 col-md-3 skill">
+          <img src="images/photoshop.png" alt="Photoshop" class="img-fluid" />
+          <p>Photoshop</p>
+        </div>
       </div>
     </div>
   </section>
+
+
+
+
+
 
 
   <section id="contact">
@@ -195,6 +221,7 @@
 
   <!-- Script -->
   <script src="script.js"></script>
+  <script src="bootstrap.min.js"></script>
 </body>
 
 </html>
