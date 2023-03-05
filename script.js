@@ -58,5 +58,22 @@ for (var i = 0; i < square.length; i++) {
 
 
 
+var typed = new Typed('#typed', {
+  strings: ['CODER.', 'DESIGNER.', 'PHOTOGRAFER.'],
+  typeSpeed: 140,
+  backSpeed: 70,
+  loop: true,
+  onComplete: function (self, i) {
+    console.log('String typed:', self.strings[i]);
+  }
+});
+
+
+
+
+
+
+
+
 
 
