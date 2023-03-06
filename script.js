@@ -57,6 +57,8 @@ for (var i = 0; i < square.length; i++) {
 }
 
 
+
+
 // Create a new instance of Typed.js
 var typed = new Typed('#typed', {
   strings: ['CODER.', 'DESIGNER.', 'PHOTOGRAFER.'],

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Nunito&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster|Bungee|Nunito|Roboto&display=swap');
 
 
 
@@ -23,6 +23,17 @@ body {
   background-color: #DDDDDD;
   overflow-x: hidden;
   opacity: 1;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3A98B9;
+  z-index: 9999;
 }
 
 
@@ -183,7 +194,7 @@ nav li:nth-of-type(5) {
 .bar3 {
   width: 35px;
   height: 2px;
-  background-color: #fff;
+  background-color: #F16767;
   margin: 8px 0;
   transition: 0.4s;
 }
@@ -228,7 +239,7 @@ section#home {
 
 /* Styling for the home icon */
 .home-icon a {
-  padding: 20px 10px;
+  padding: 5% 3%;
   font-size: 1.5rem;
 }
 
@@ -511,25 +522,46 @@ button:focus {
   .square {
     font-size: 4vw;
   }
-}
 
-
-.fade-in {
-  opacity: 0;
-  animation: fadeInAnimation 1s ease-in-out forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
+  #about p {
+    text-align: center;
+    top: -5;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
   }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  #about .square-text {
+    display: flex;
+    justify-content: center;
+
   }
+
+  #about .square {
+    font-size: 20px;
+  }
+
+  #about .hire-me {
+    display: block;
+    margin: 5% auto;
+
+  }
+
+  .imgbox img {
+    animation: none;
+    margin-left: 5%;
+  }
+
+
+
+
+
+
 }
+
+
+
+
 
 
 
@@ -557,7 +589,7 @@ section#skills {
 }
 
 .skill-img img {
-  width: 300px;
+  width: 200px;
   text-align: center;
   padding: 0 5%;
 }
@@ -596,8 +628,11 @@ section#skills {
   }
 
   #skills h2 {
-    font-size: 5vw;
+    font-size: 20px;
+  }
 
+  #skills p {
+    font-size: 14px;
   }
 
 }
@@ -727,10 +762,15 @@ section#contact {
   padding: 3% 0;
 }
 
+.form-icon a {
+  text-decoration: none;
+}
+
 
 .form-icon {
+
   margin: 0 10px;
-  font-size: 3em;
+  font-size: 2em;
   color: #F16767;
   transition: all 0.3s ease-in-out;
   background-color: transparent;
@@ -756,4 +796,21 @@ footer {
   height: 20px;
   line-height: 20px;
   margin: auto
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
