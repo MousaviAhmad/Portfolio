@@ -194,7 +194,7 @@ nav li:nth-of-type(5) {
 .bar3 {
   width: 35px;
   height: 2px;
-  background-color: #F16767;
+  background-color: #6096B4;
   margin: 8px 0;
   transition: 0.4s;
 }
@@ -795,7 +795,9 @@ section#contact {
 footer {
   height: 20px;
   line-height: 20px;
-  margin: auto
+  margin: auto;
+  background-color: #4E6E81;
+
 }
 
 .fade-in {
