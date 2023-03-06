@@ -327,7 +327,7 @@ section#about {
 .imgbox {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 
@@ -641,6 +641,14 @@ button:focus {
   }
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .imgbox {
+    width: 100%;
+    height: 60%;
+    margin-top: 25%;
+  }
+}
+
 
 /* ------------Skills----------- */
 
@@ -674,23 +682,42 @@ section#skills {
 
 }
 
+.skill-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.skill-img img {
+  --m: radial-gradient(circle farthest-side at right, #000 99%, #0000) 0 100%/46% 92% no-repeat, radial-gradient(circle farthest-side at left, #000 99%, #0000) 100% 0/46% 92% no-repeat;
+  -webkit-mask: var(--m);
+  mask: var(--m);
+  filter: grayscale(.5);
+  transition: .3s linear;
+  cursor: pointer;
+  padding: 5%;
+}
+
+.skill-img:hover img {
+  -webkit-mask-position: 7.5% 50%, 92.5% 50%;
+  mask-position: 7.5% 50%, 92.5% 50%;
+  filter: grayscale(0);
+}
+
 .skill-description {
-  font-family: roboto, sans-serif;
-  font-size: 25px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
   font-weight: bold;
-  padding: 5% 0;
   color: #3d535f;
 }
 
 
-.skill-img {
-  transition: transform 0.3s ease-out;
-}
-
-
-.skill-img:hover {
-  transform: scale(1.1);
-}
 
 
 @media (max-width: 600px) {
