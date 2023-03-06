@@ -58,6 +58,27 @@ for (var i = 0; i < square.length; i++) {
 
 
 
+var currentImage = 0;
+var totalImages = 2;
+
+function changeImage() {
+  currentImage++;
+  if (currentImage > totalImages) {
+    currentImage = 1;
+  }
+  document.getElementById("Arsam1").style.display = "none";
+  document.getElementById("Arsam2").style.display = "none";
+  document.getElementById("Arsam" + currentImage).style.display = "block";
+}
+// Change images every 5 seconds
+changeImage();
+
+setInterval(changeImage, 5000);
+
+
+
+
+
 
 // Create a new instance of Typed.js
 var typed = new Typed('#typed', {
