@@ -62,8 +62,8 @@ for (var i = 0; i < square.length; i++) {
 // Create a new instance of Typed.js
 var typed = new Typed('#typed', {
   strings: ['CODER.', 'DESIGNER.', 'PHOTOGRAFER.'],
-  typeSpeed: 100,
-  backSpeed: 70,
+  typeSpeed: 30,
+  backSpeed: 20,
   loop: true,
   onComplete: function (self, i) {
     console.log('String typed:', self.strings[i]);
